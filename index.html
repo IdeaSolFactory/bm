@@ -6,15 +6,15 @@
     <style> 
   
   h2 {
-    font-family: Lobster; color: brown;
+    font-family: Lobster; color: #FF007F;
   } 
   .thick-brown-border {
-    border-color: brown;
+    border-color: #FF007F;
     border-width: 5px;
     border-style: solid;
   }
   .thick-red-border {
-    border-color: red;
+    border-color: #FF007F;
     border-width: 10px;
     border-style: solid;
     border-radius: 30%;
@@ -45,50 +45,94 @@
   .bold {
     font-weight: bold;
   }
-  .box-shadow{
+  .box-shadow {
     box-shadow: 0 20px 20px rgba(0,0,0,20), 0 6px 6px rgba(0,0,0,40);
+  }
+
+  .image-line{
+  text-align: center;
+  }
+  .image-line > img {
+    display: inline-block;
+    margin: auto;
   }
   .image-size {
     width: 200px;
     height: 280px;
   }
   .image-center {
-    margin: 0 auto;
-    display: inline-block;
+    margin: auto;
+    display: block;
   }
 
   .image-center:nth-of-type(3){
     height: 350px;
   }
-  p{
+  p {
     position: relative;
     left: 20px;
     top: 10px;
+    text-align: justify;
   }
-  .title-position{
+  .title-position {
     position: relative;
-    top: 40px;
+    top: 100px;
+    right: 100px;
   }
     #navbar {
-position: fixed;
-top: 0px;
-left: 0px;
-width: 100%;
-    background-color: brown}
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: brown;
+    }
+
+  #navbar > ul{
+    list-style-type: none;    
+  }
+
+  #navbar > ul > li{
+    display: inline-block;
+  }
+img:hover {
+  transform: scale(1.5);
+}
+.navanim {
+  animation-name: rainbow;
+  animation-duration: 8s;
+  }
+  @keyframes rainbow {
+    0% {
+      background-color: black; 
+      }
+    50% {
+      background-color: red;
+      }
+    100%{
+      background-color: pink;
+      }
+  }
+  #navbar > ul > li:not(:last-of-type){
+    padding-right: 12px;
+  } 
+  #body {
+  background-image: linear-gradient(105deg, orange, yellow);
+  }
   </style>
-  <title class="title-position">FluffyFrodo</title>
-  <nav id="navbar">
+  <title class="title-position">FluffyFrodo</title> 
+</head>
+<body id="body" class="padding-body" style="font-family: monospace">
+
+   <nav id="navbar" class="navanim">
       <ul>
         <li><a href="">Send him snacks</a></li>
         <li><a href="">Donate his favorit shelter</a></li>
       </ul>
     </nav>
-</head>
-<body class="background-color padding-body" style="font-family: monospace">
 
   <h1 class="text-align" style="font-family: Lobster; color:brown"><u>Life of Frodo</u></h1></body>
-  <hr>
-  <div stlye="width:100%;">
+  <hr style="width:350px">
+  <div class="image-line" stlye="width:100%;">
     <img src="images/car.jpg" class="image-center box-shadow very-small-image image-size" alt="Frodo loves adventures">   
     <img src="images/kilato.jpg" class="image-center box-shadow very-small-image image-size" alt="Frodo loves adventures">
     <img src="images/adventure.jpg" class="image-center thick-red-border very-small-image image-size" alt="Frodo loves adventures"> 
@@ -97,28 +141,32 @@ width: 100%;
   </div>
   
     <h2 style="color:brown";><u> Pawsome life of Frodo</u></h2>
-    <p> Frodo is a <strong><em>Golden Retriever</strong></em> born in 2017 on a beautiful day. Not only the world gained a new puppy, but somewhere a couple got a new family member, even they have not known it yet.</p><br>
+    <p> Frodo is a <strong><em>Golden Retriever</strong></em> born in 2017 on a beautiful day. Not only the world gained a new puppy, but somewhere a couple got a new family member, even they have not known it yet. His firdt day scontainted crying, running, afraid of hiw osn shade, but soon he started to trust his new mom. A few days after he got to know his father, and ever since they have a really special bonding. He learned all the basic rules easily, and have several tricks he presents with profession. He does not really like to lay down, but barking is one of his favourite ones. He can do many funny things, such as throwing his ass up the ache it, poke your arm to give him food meanwhile you are eating, and hide-and-seek is his favorit fun. </p><br>
   
     <h3 class="text-align h3" style="color:brown"; id="h3-form"> Frodo's favorit toys</h3>
-    <hr>
+    <hr style="width:250px">
 <ol class="text-align">
   <li  style="color: white"> <strong>Lady Pötyi</strong>, the rubber duck</li>
   <li> <strong>Mr Blacky</strong>, another rubber duck</li>
   <li> a rubber <strong>moustache</strong>, Mommy brought from England</li>
   </ol>
   <br>
+
   <h2 style="color:brown">Friends of Frodo</h2>
+
   <ul> 
     <li>Csoki</li>
     <li> Leila aka Laskafül</li>
     <li> Börpi </li>
     <li> Cappy </li>
        </ul>
+
        <div class="image-center"> 
  <img src="images/Frodo.jpg" class="image-center thick-brown-border smaller-image" alt="Frodo is always having fun"> 
  </div>
+
  <br>
- <p> Frodo is getting 3 years old in July, so we are preparing a huge doggy party for him to spend this special day with his best friends. Serving dog friendly food, a lot of toys, a pool full of water, snackos and cattos, so unlimited joy will be on the table.</p>
+ <p style="text-align:center"> Frodo is getting 3 years old in July, so we are preparing a huge doggy party for him to spend this special day with his best friends. Serving dog friendly food, a lot of toys, a pool full of water, snackos and cattos, so unlimited joy will be on the table.</p>
 <br>
  <p>He has a bro called Figo, who is a black labrador retriever. </p>
  
